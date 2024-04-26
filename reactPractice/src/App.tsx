@@ -3,6 +3,7 @@ import ListGroup from "./components/ListGroup";
 import Alert from "./components/Alert";
 import Button from "./components/Button";
 import { useState } from "react";
+import Menu from "./components/Menu";
 
 function App() {
   let cities = ["Seattle", "San Francisco", "Los Angeles", "San Jose", "Boise"];
@@ -15,6 +16,7 @@ function App() {
 
   return (
     <div>
+      <Menu></Menu>
       {alertVisible && (
         <Alert onClose={() => setAlertVisible(false)}>
           {" "}
